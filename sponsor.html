@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoie o kimi-caveman</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #2d1b00 0%, #1a1a1a 100%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 500px;
+        }
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        p { color: #a0a0a0; margin-bottom: 2rem; }
+        .pix-box {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .pix-key {
+            font-family: monospace;
+            font-size: 1.2rem;
+            background: rgba(0,0,0,0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 0.5rem 0;
+            word-break: break-all;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.05); }
+        .bmc { background: #ffdd00; color: #000; }
+        .heart { font-size: 3rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">🪨</div>
+        <h1>Apoie o kimi-caveman</h1>
+        <p>Seu apoio ajuda a manter e evoluir o projeto!</p>
+
+        <div class="pix-box">
+            <h3>☕ Buy Me a Coffee</h3>
+            <p>Apoio internacional via cartão</p>
+            <a href="https://buymeacoffee.com/alanrezendeee" class="btn bmc" target="_blank">Buy Me a Coffee</a>
+        </div>
+
+        <div class="pix-box">
+            <h3>🇧🇷 PIX (Brasil)</h3>
+            <p>CNPJ: THE RETECH LTDA - EPP</p>
+            <div class="pix-key">54802231000148</div>
+            <br>
+            <button class="btn" onclick="copyPix()">📋 Copiar chave PIX</button>
+        </div>
+
+        <p style="margin-top: 2rem; font-size: 0.9rem;">
+            <a href="https://github.com/alanrezendeee/kimi-caveman" style="color: #58a6ff;">← Voltar ao projeto</a>
+        </p>
+    </div>
+
+    <script>
+        function copyPix() {
+            navigator.clipboard.writeText('54802231000148');
+            alert('Chave PIX copiada!');
+        }
+    </script>
+</body>
+</html>

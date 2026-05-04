@@ -135,4 +135,12 @@ kimi-caveman/
 
 MIT — see [LICENSE](LICENSE) for details.
 
+## 🏢 About
+
+**kimi-caveman** is a token-efficient communication skill for [Kimi Code CLI](https://github.com/MoonshotAI/kimi-cli). It reduces agent output verbosity by 60-75% while maintaining 100% technical accuracy, making sessions faster, cheaper, and more readable.
+
+Part of the **caveman ecosystem**: less tokens, same brain.
+
+---
+
 Built with 🪨 by [The Retech](https://github.com/theretech) and friends.

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kimi-caveman"
+version = "0.1.0"
+description = "Caveman mode for Kimi Code CLI — terse, token-efficient communication that cuts 60-75% of output tokens"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "The Retech"}]
+keywords = ["kimi", "kimi-cli", "caveman", "token-efficiency", "compression", "cli-agent", "terse"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+caveman-compress = "caveman_mode.scripts.compress:main"
+
+[project.urls]
+Homepage = "https://github.com/theretech/kimi-caveman"
+Repository = "https://github.com/theretech/kimi-caveman"
+Issues = "https://github.com/theretech/kimi-caveman/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["caveman_mode"]
+
+[tool.ruff]
+line-length = 100

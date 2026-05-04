@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "kimi-caveman"
-version = "0.1.0"
+version = "0.1.1"
 description = "Caveman mode for Kimi Code CLI — terse, token-efficient communication that cuts 60-75% of output tokens"
 readme = "README.md"
 license = {text = "MIT"}
